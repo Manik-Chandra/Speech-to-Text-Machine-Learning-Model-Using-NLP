@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speech to Text</title>
+  <link rel="stylesheet" href="{% static 'STTpage.css' %}">
+</head>
+<body>
+  <div class="stt-container">
+    <h1>Speech to Text</h1>
+
+    <label for="language-select">Select Language:</label>
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+    </select>
+
+    <button id="record-btn">
+      <img src="{% static 'mic_icon.png' %}" alt="Mic" />
+    </button>
+
+    <div class="audio-player">
+      <label>Recorded Audio:</label>
+      <audio id="audio" controls></audio>
+    </div>
+
+    <div class="transcription-box">
+      <label>Transcribed text will appear here.</label>
+      <textarea id="transcription" rows="5" readonly></textarea>
+    </div>
+  </div>
+  <script 
+    src="{% static 'STTpage.js' %}"
+  ></script>
+</body>
+</html>

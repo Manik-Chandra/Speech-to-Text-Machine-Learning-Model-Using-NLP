@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('STTpage_bg_darker.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(30, 60, 114, 0.7); /* Blue overlay */
+    z-index: 0;
+  }
+  
+  .stt-container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  select {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #record-btn {
+    margin: 30px auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 80px;          
+    height: 80px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: radial-gradient(circle at center, #007bff, #0056b3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #record-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  #record-btn img {
+    width: 100%;           
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 4px white);
+  }
+  
+  .audio-player {
+    margin-top: 10px;
+  }
+  
+  audio {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .transcription-box {
+    margin-top: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    border: none;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+  }
+  
