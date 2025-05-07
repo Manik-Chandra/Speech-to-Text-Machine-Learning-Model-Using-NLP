@@ -29,8 +29,8 @@ This project is a **multilingual speech recognition system** that converts spoke
 The model files are not included in this repository due to their large size. Please download them separately using the following steps:
 
 1. **Download the English and Hindi models** from the shared link:
-   - [English Model](<(https://drive.google.com/drive/folders/1MWOrn-TOJII6lTcFTLJHHiHzpyXMf5ZV?usp=drive_link)>)
-   - [Hindi Model](<(https://drive.google.com/drive/folders/1CMbqfmJW39Z3D71hqP_-ix7wmnn0JTnC?usp=drive_link)>)
+   - [English Model](<https://drive.google.com/drive/folders/1MWOrn-TOJII6lTcFTLJHHiHzpyXMf5ZV?usp=drive_link>)
+   - [Hindi Model](<https://drive.google.com/drive/folders/1CMbqfmJW39Z3D71hqP_-ix7wmnn0JTnC?usp=drive_link>)
 
 2. After downloading, place the models in the `STTapp/models/speech_models/` directory.
 
